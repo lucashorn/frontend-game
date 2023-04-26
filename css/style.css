@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cano {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: 0;
+    animation: animacao-cano 5s infinite linear;
+}
+
+@keyframes animacao-cano {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
